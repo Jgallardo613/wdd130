@@ -42,12 +42,12 @@ nav ul li a {
   position: relative;
   text-align: center;
   padding: 2rem;
-  background-color: var(--primary-color);
   color: white;
   height: 500px;
-  background-image: url('background-image.jpg');
+  background-image: url('images/background-image.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero h1,
@@ -73,9 +73,11 @@ nav ul li a {
   padding: 10px 15px;
   border-radius: 8px;
 }
-
 .hero img {
-  display: none;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 h1, h2 {
