@@ -3,97 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us | Whitewater Rafting Adventures</title>
-  <meta name="description" content="Have questions, need a reservation, or have suggestions? Reach out to Whitewater Rafting Adventures today!"/>
-  <meta name="author" content="Your Name"/>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="styles/rafting.css"/>
+  <title>Contact Us | White Water Rafting</title>
+  <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
-
   <header>
     <div class="logo-container">
-      <img src="images/logo.png" alt="Rafting Adventures Logo" class="logo"/>
+      <img src="images/logo.png" alt="Rafting Site Logo" />
     </div>
-    <nav aria-label="Main Navigation">
+    <h1>White Water Rafting</h1>
+    <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Get in Touch with Us</h1>
-
     <section class="company-info">
-      <h2>Where to Find Us</h2>
-      <p><strong>Address:</strong> 123 Rapids Way, River City, RC 45678</p>
-      <p><strong>Phone:</strong> (555) 123-4567</p>
-      <p><strong>Email:</strong> 
-        <a href="mailto:info@raftingadventures.com">info@raftingadventures.com</a>
-      </p>
-
-      <div class="map-container">
-        <h3>We're Right Here!</h3>
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=..."
-          width="600" height="450" allowfullscreen loading="lazy" title="Rafting Adventures Map">
-        </iframe>
-      </div>
+      <h2>Contact Information</h2>
+      <p>123 River Way, Rapidville, CO 80439</p>
+      <p>Email: contact@raftingco.com</p>
+      <p>Phone: (555) 123-4567</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.822251743658!2d-105.51785362427223!3d39.68115317159075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b91f34eaf98c1%3A0x27f6d3edda2c57ff!2sClear%20Creek%20Rafting%20Co!5e0!3m2!1sen!2sus!4v1615463983011!5m2!1sen!2sus"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
     </section>
 
     <section class="employees">
-      <h2>Meet the Team</h2>
-      <div class="employees-profile">
-        <figure>
-          <img src="images/employee1.jpg" alt="John Doe - Lead Rafting Guide" />
-          <figcaption>John Doe - Lead Rafting Guide</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee2.jpg" alt="Jane Smith - Safety Instructor" />
-          <figcaption>Jane Smith - Safety Instructor</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee3.jpg" alt="Mike Johnson - Adventure Coordinator" />
-          <figcaption>Mike Johnson - Adventure Coordinator</figcaption>
-        </figure>
-      </div>
-    </section>
+        <h2>Meet the Team</h2>
+        <div class="employees-profile">
+          <figure>
+            <img src="images/employee1.jpg" alt="John Doe - Lead Rafting Guide" style="width: 80%; max-width: 150px;" />
+            <figcaption>John Doe - Lead Rafting Guide</figcaption>
+          </figure>
+          <figure>
+            <img src="images/employee2.jpg" alt="Jane Smith - Safety Instructor" />
+            <figcaption>Jane Smith - Safety Instructor</figcaption>
+          </figure>
+          <figure>
+            <img src="images/employee3.jpg" alt="Mike Johnson - Adventure Coordinator" />
+            <figcaption>Mike Johnson - Adventure Coordinator</figcaption>
+          </figure>
+        </div>
+      </section>
+      
 
     <section class="contact-form">
-      <h2>Drop Us a Message</h2>
-      <form action="submit_form.php" method="post">
-        <label for="name">What's your name?</label>
-        <input type="text" id="name" name="name" required />
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required/>
 
-        <label for="email">Your email address:</label>
-        <input type="email" id="email" name="email" required />
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required/>
 
-        <fieldset>
-          <legend>What's your message about?</legend>
-          <label>
-            <input type="radio" name="purpose" value="general" required /> General Inquiry
-          </label>
-          <label>
-            <input type="radio" name="purpose" value="reservation" /> Reservation Question
-          </label>
-          <label>
-            <input type="radio" name="purpose" value="suggestion" /> Website Suggestion
-          </label>
-        </fieldset>
-
-        <label for="message">What's on your mind?</label>
+        <label for="message">Message</label>
         <textarea id="message" name="message" rows="5" required></textarea>
-
-        <label>
-          <input type="checkbox" name="subscribe" /> Yes, sign me up for the monthly newsletter!
-        </label>
 
         <button type="submit">Send Message</button>
       </form>
@@ -101,24 +71,12 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Rafting Adventures | Your Name</p>
+    <p>&copy; 2025 White Water Rafting | Designed by Your Name</p>
     <div class="social-media">
-      <a href="https://www.facebook.com" aria-label="Facebook">
-        <img src="images/facebook-icon.jpeg" alt="Facebook Icon" class="social-icon" />
-      </a>
-      <a href="https://www.twitter.com" aria-label="Twitter">
-        <img src="images/twitter-icon.jpeg" alt="Twitter Icon" class="social-icon" />
-      </a>
-      <a href="https://www.instagram.com" aria-label="Instagram">
-        <img src="images/instagram-icon.jpeg" alt="Instagram Icon" class="social-icon" />
-      </a>
+      <a href="#"><img src="images/facebook-icon.jpeg" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter-icon.jpeg" alt="Twitter"></a>
+      <a href="#"><img src="images/instagram-icon.jpeg" alt="Instagram"></a>
     </div>
-    <p>
-      <a href="https://www.canva.com/design/DAGji-IwyhI/0pm8nQRnr-KemrmKLv9jig/view?utm_content=DAGji-IwyhI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf4c55d432e" target="_blank">
-        Check out the Wireframe Design
-      </a>
-    </p>
   </footer>
-
 </body>
 </html>
