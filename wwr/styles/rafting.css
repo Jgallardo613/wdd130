@@ -56,7 +56,7 @@ nav ul li a {
   background-image: url('images/background-image.jpg');
   background-size: cover;
   background-position: center;
-  color: white;
+  color: black;
   height: 400px;
 }
 
@@ -84,11 +84,12 @@ main {
   margin-top: 2rem;
 }
 
-.mission img {
-  width: 40%; 
+.mission-image {
+  width: 40%;
   object-fit: cover;
   border-radius: 8px;
   margin-right: 2rem;
+  justify-content: right;
 }
 
 .mission p {
@@ -107,7 +108,7 @@ main {
 }
 
 .history img {
-  width: 30%; 
+  width: 30%;
   object-fit: cover;
   border-radius: 8px;
   margin-right: 2rem;
@@ -246,7 +247,31 @@ footer .social-media {
 
 footer .social-media img {
   width: 30px;
-  height: 30px; 
+  height: 30px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.trip-table-box {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.trip-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.trip-table th {
+  background-color: var(--primary-color);
+  color: white;
 }
