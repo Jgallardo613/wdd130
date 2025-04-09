@@ -1,38 +1,85 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="My homepage is a reflection of what I need to show my skills in HTML and CSS in WDD 130 to improve over time.">
-    <meta name="author" content="Jeffrey Gallardo">
-    <title>Jeffrey Gallardo | WDD 130</title>
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>White Water Rafting Adventures</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">HOME</a>
-            <a href="wwr/">Rafting Site</a>
-        </nav> 
-    </header>
 
-    <main>
-        <h1>Jeffrey Gallardo | WDD 130</h1>
-        <img src="images/profile.jpeg" alt="A portrait of Jeffrey Gallardo, a web developer" width="200">
-    </main>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="White Water Rafting Adventures Logo" class="logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <aside>
-        <h2>California</h2>
-        <img src="images/california-image.jpg" alt="A scenic view of California, showcasing its diverse landscapes" width="300" height="200">
-        <p>California is known for its stunning beaches, the iconic Golden Gate Bridge, and its diverse culture. It offers a vibrant mixture of technology, nature, and entertainment, making it a hub for innovation and creativity.</p>
-    </aside>
+  <main>
 
-    <footer>
-        <p>© 2025 🌴 Jeffrey Gallardo 🌴 Compton, California. I enjoy writing poems, playing instruments like drums, and playing soccer.</p>
-    </footer>
-    <ul>
-        <img src="images/los-angeles-california-temple.jpg" alt="its beautful view of the lds temple" width="300" height="200">
-        <li><a href="https://www.churchofjesuschrist.org/temples/details/los-angeles-california-temple" target="_blank">Los Angeles California Temple</a></li>
-    </ul>
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Rafting Adventure Hero Image">
+      <div class="hero-overlay">
+        <h1>Ride the Rapids of Adventure!</h1>
+        <p>Experience the thrill of rafting through scenic landscapes.</p>
+        <a href="trips.html" class="cta-button">View Trips</a>
+      </div>
+    </section>
+    
+    <section class="cta">
+      <h2>Your Adventure Begins Here</h2>
+      <p>Discover exhilarating rafting trips that will leave you breathless.</p>
+      <a href="trips.html" class="cta-button">Explore Now</a>
+    </section>
+
+    <section class="grid-offerings">
+      <h2>Why Choose Us?</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="images/offering1.jpg" alt="Expert Guides">
+          <h3>Expert Guides</h3>
+          <p>Our experienced guides ensure a safe and thrilling adventure on the water.</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/offering2.jpg" alt="Breathtaking Scenery">
+          <h3>Breathtaking Scenery</h3>
+          <p>Immerse yourself in stunning landscapes and pristine waterways.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-signup">
+      <h3>Stay Updated!</h3>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        
+        <button type="submit" class="signup-button">Sign Up</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-media">
+      <a href="#" class="social-icon"><img src="images/facebook-icon.jpeg" alt="Facebook" class="social-icon-img"></a>
+      <a href="#" class="social-icon"><img src="images/twitter-icon.jpeg" alt="Twitter" class="social-icon-img"></a>
+      <a href="#" class="social-icon"><img src="images/instagram-icon.jpeg" alt="Instagram" class="social-icon-img"></a>
+    </div>
+    <p>&copy; 2025 White Water Rafting Adventures. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
