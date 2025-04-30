@@ -5,6 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us | White Water Rafting</title>
   <link rel="stylesheet" href="styles/rafting.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Jost&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Contact page specific styles */
+    .company-info {
+      padding: 40px 0;
+      text-align: center;
+      background-color: #f8f9fa;
+    }
+
+    .company-info h2 {
+      font-size: 2.5rem;
+      font-family: 'Oswald', sans-serif;
+      color: #004d39;
+    }
+
+    .company-info p {
+      font-size: 1.2rem;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .employees {
+      padding: 40px 0;
+      background-color: #e9ecef;
+      text-align: center;
+    }
+
+    .employees h2 {
+      font-size: 2.5rem;
+      font-family: 'Oswald', sans-serif;
+      color: #004d39;
+    }
+
+    .employees-profile {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .employees-profile figure {
+      margin: 15px;
+      text-align: center;
+    }
+
+    .employees-profile img {
+      width: 100%;
+      max-width: 150px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .employees-profile figcaption {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .contact-form {
+      padding: 40px;
+      background-color: #e9ecef;
+      margin-top: 30px;
+      border-radius: 8px;
+      max-width: 800px;
+      margin: 30px auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h2 {
+      font-size: 2.5rem;
+      font-family: 'Oswald', sans-serif;
+      color: #004d39;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .contact-form button {
+      background-color: #004d39;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #00664d;
+    }
+
+    footer {
+      background-color: #004d39;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer .social-media a {
+      margin: 0 10px;
+    }
+
+    footer .social-media img {
+      width: 30px;
+      height: 30px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -38,7 +154,7 @@
         <h2>Meet the Team</h2>
         <div class="employees-profile">
           <figure>
-            <img src="images/employee1.jpg" alt="John Doe - Lead Rafting Guide" style="width: 80%; max-width: 150px;" />
+            <img src="images/employee1.jpg" alt="John Doe - Lead Rafting Guide" />
             <figcaption>John Doe - Lead Rafting Guide</figcaption>
           </figure>
           <figure>
@@ -50,8 +166,7 @@
             <figcaption>Mike Johnson - Adventure Coordinator</figcaption>
           </figure>
         </div>
-      </section>
-      
+    </section>
 
     <section class="contact-form">
       <h2>Send Us a Message</h2>
