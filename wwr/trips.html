@@ -1,128 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trips | White Water Rafting Adventures</title>
-  <meta name="description" content="Explore exciting rafting trips, adventures, and packages at White Water Rafting Adventures. Book your next adventure today!">
-  <link rel="stylesheet" href="styles/rafting.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rafting Trips</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background-color: #004d4d;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+
+    header .logo img {
+      height: 60px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav a.active,
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-color: #009999;
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #006666;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .trip-descriptions .trip {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .trip-table table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .trip-table th,
+    .trip-table td {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      text-align: left;
+    }
+
+    .trip-table th {
+      background-color: #e0f7f7;
+    }
+
+    .trip-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .trip-image-box {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .trip-image-box img {
+      width: 100%;
+      display: block;
+    }
+
+    .trip-image-box-content {
+      padding: 1rem;
+    }
+
+    footer {
+      background-color: #004d4d;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    footer .social-media-icons {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .social-icon {
+      color: #333;
+      font-size: 20px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-icon:hover {
+      color: #007bff; /* Hover color for icons */
+    }
+  </style>
 </head>
-<body class="trips-page">
+<body>
 
   <header>
-    <div class="logo-container">
-      <img src="images/logo.png" alt="Rafting Adventures Logo" class="logo">
+    <div class="logo">
+      <img src="images/logo.png" alt="Rafting Logo">
     </div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="trips.html">Trips</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html" class="active">Trips</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <section class="hero">
+    <h1>Explore Our Thrilling Rafting Trips</h1>
+    <p>Choose the adventure that's right for you.</p>
+    <a href="contact.html" class="btn">Contact Us to Book</a>
+  </section>
+
   <main>
-    <section class="hero">
-      <h1>Rafting Trips & Adventures</h1>
-      <p>Discover thrilling rafting experiences for all skill levels. Our adventures are waiting for you!</p>
-    </section>
-
-    <section class="cta">
-      <h2>Ready for Your Next Adventure?</h2>
-      <p>Contact us to book your rafting trip or learn more about our adventures.</p>
-      <a href="contact.html" class="cta-button">Get in Touch</a>
-    </section>
-
     <section class="trip-descriptions">
-      <article>
-        <h3>Thrilling Rapids Adventure</h3>
-        <img src="images/rafting1.jpg" alt="Thrilling Rapids Adventure">
-        <p>Experience the excitement of navigating wild rapids in some of the most scenic locations. This trip is designed for thrill-seekers!</p>
-      </article>
-      <article>
-        <h3>Family-Friendly River Expedition</h3>
-        <img src="images/rafting2.jpg" alt="Family-Friendly River Expedition">
-        <p>Perfect for families, this trip offers a safe yet fun rafting experience on calmer waters, with plenty of opportunities for sightseeing.</p>
-      </article>
-      <article>
-        <h3>Extreme Whitewater Challenge</h3>
-        <img src="images/rafting3.jpg" alt="Extreme Whitewater Challenge">
-        <p>If you're an adrenaline junkie, this is the trip for you! Navigate the most challenging rapids with expert guides leading the way.</p>
-      </article>
-    </section>
-
-    <section class="trip-box">
-      <h2>Our Available Trips</h2>
-      <div class="trip-table-box">
-        <table class="trip-table">
-          <thead>
-            <tr>
-              <th>Trip Name</th>
-              <th>Duration</th>
-              <th>Difficulty</th>
-              <th>Price</th>
-              <th>Location</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Thrilling Rapids Adventure</td>
-              <td>Full Day</td>
-              <td>Advanced</td>
-              <td>$150</td>
-              <td>Mountain River</td>
-            </tr>
-            <tr>
-              <td>Family-Friendly Expedition</td>
-              <td>Half Day</td>
-              <td>Beginner</td>
-              <td>$80</td>
-              <td>Lake River</td>
-            </tr>
-            <tr>
-              <td>Extreme Whitewater Challenge</td>
-              <td>Full Day</td>
-              <td>Expert</td>
-              <td>$200</td>
-              <td>Rapid Falls</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="trip">
+        <h2>Wild River Rush</h2>
+        <p>Experience the thrill of Class IV rapids on this 3-hour adrenaline-pumping adventure through the rugged canyons of the Wild River. Perfect for experienced rafters.</p>
+      </div>
+      <div class="trip">
+        <h2>Scenic Family Float</h2>
+        <p>A gentle, relaxing 2-hour float down the serene Crystal Creek. Ideal for families with children or those seeking a peaceful nature experience.</p>
+      </div>
+      <div class="trip">
+        <h2>Sunset Adventure</h2>
+        <p>Enjoy a magical 1.5-hour rafting experience during golden hour with stunning views, light rapids, and a beach-side campfire dinner. Great for couples and groups.</p>
       </div>
     </section>
 
-    <section class="newsletter-signup">
-      <h2>Stay Updated</h2>
-      <p>Sign up for our newsletter and be the first to know about new trips, promotions, and rafting tips!</p>
-      <form action="#" method="post">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
-
-        <button type="submit">Sign Up</button>
-      </form>
+    <section class="trip-table">
+      <h2>Trip Information</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Trip Name</th>
+            <th>Duration</th>
+            <th>Difficulty</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Wild River Rush</td>
+            <td>3 hours</td>
+            <td>Hard</td>
+            <td>$120</td>
+          </tr>
+          <tr>
+            <td>Scenic Family Float</td>
+            <td>2 hours</td>
+            <td>Easy</td>
+            <td>$75</td>
+          </tr>
+          <tr>
+            <td>Sunset Adventure</td>
+            <td>1.5 hours</td>
+            <td>Moderate</td>
+            <td>$95</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
+    <section class="trip-images">
+      <div class="trip-image-box">
+        <img src="images/trip1.jpg" alt="Wild River Rush">
+        <div class="trip-image-box-content">
+          <h3>Wild River Rush</h3>
+          <p>Get your heart pumping with epic rapids and wild water action.</p>
+        </div>
+      </div>
+      <div class="trip-image-box">
+        <img src="images/trip2.jpg" alt="Scenic Family Float">
+        <div class="trip-image-box-content">
+          <h3>Scenic Family Float</h3>
+          <p>A peaceful journey the whole family will love and remember.</p>
+        </div>
+      </div>
+      <div class="trip-image-box">
+        <img src="images/trip3.jpg" alt="Sunset Adventure">
+        <div class="trip-image-box-content">
+          <h3>Sunset Adventure</h3>
+          <p>Unforgettable views and a relaxing ride at golden hour.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- Social Media Icons moved to the bottom in the footer -->
   <footer>
-    <p>&copy; 2025 Rafting Adventures | Jeffrey Gallardo</p>
-    <div class="social-media">
-      <a href="https://www.facebook.com" target="_blank">
-        <img src="images/facebook-icon.jpeg" alt="Facebook">
-      </a>
-      <a href="https://www.twitter.com" target="_blank">
-        <img src="images/twitter-icon.jpeg" alt="Twitter">
-      </a>
-      <a href="https://www.instagram.com" target="_blank">
-        <img src="images/instagram-icon.jpeg" alt="Instagram">
-      </a>
+    <p>&copy; 2025 White Water Rafting Co. | All rights reserved</p>
+    <div class="social-media-icons">
+      <a href="#" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
     </div>
-    <a href="images/trips-wireframe.png" class="footer-link">View Trips Wireframe</a>
   </footer>
 
 </body>
